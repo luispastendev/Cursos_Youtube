@@ -11,12 +11,13 @@ archivo.onchange = (ev) => {
             subirImg(file);
         }else{
             console.log("El archivo es muy grande solo se admiten archivos maximo de 1mb");
+            archivo.value = "";
         }
     }else{
         console.log("no se encontro la extencion, extenciones validas: " + extenciones_p.toString());
+        archivo.value = "";
     }
 }
-
 function subirImg(file){
     var file_r = new FileReader();
     var progress = document.getElementById('progreso');
@@ -42,3 +43,23 @@ function subirImg(file){
     }
     file_r.readAsDataURL(file);
 }
+var formulario = document.getElementById('frm_datos');
+formulario.addEventListener('submit',(ev) => {
+    ev.preventDefault();
+    if(archivo.files.length == 0 || document.getElementById('nombre').value == ""){
+        console.log("Verifica que ninguno de los campos este vacio");
+        return
+    }
+    var dataform = new FormData(formulario);
+    dataform.append('imagen',archivo.files[0]);
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST','server.php');
+    xhr.onload = () => {
+        if (xhr.status === 200) {
+            console.log("se enviaron dtos");
+        }else{
+            console.log("Ocurrio un error al enviar los datos" + xhr.status);
+        }
+    }
+    xhr.send(dataform);
+})
