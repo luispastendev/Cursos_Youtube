@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    body{
+        font-family: 'Arial';
+    }
+    .wrapper-controles{
+        width: 600px;
+        margin: 5em auto;
+        text-align: center;
+    }
+    .wrapper-img{
+        float: left;
+        width: 50%;
+    }
+    .wrapper-controls{
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+    .wrapper-controls > h2{
+        font-family: 'Arial';
+        text-align: center;
+    }
+    .wrapper-controls > input{
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    progress::-webkit-progress-bar {background-color: blue; width: 100%; text-align: center;}
+    .wrapper-controls > progress{
+        text-align: left;
+        width: 80%;
+    }
+    .img-thumbnail{
+        max-width: 250px;
+        padding: .6em;
+        box-sizing: border-box;
+        border: 3px dotted gray;
+        border-radius: .3em;
+    }
+    </style>
+    <div class="wrapper-controles">
+        <div class="wrapper-img">
+            <img src="img.png" alt="" id="muestra" class="img-thumbnail">
+        </div>
+        <div class="wrapper-controls">
+            <h2>Sube un Archivo</h2>
+            <input type="file" name="" value="" id="archivo">
+            <progress value="0" max="100" class="progress" id="progreso">0%</progress>
+            <label for="" id="etiqueta">0%</label><br>
+            <input type="submit" name="" value="Guardar">
+        </div>
+    </div>
+
+<script src="scripts.js" charset="utf-8"></script>
+</body>
+</html>
