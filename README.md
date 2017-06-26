@@ -16,4 +16,6 @@ Almacenamos todos lo códigos referentes a los tutoriales o cursos del canal.
   * __PARTE 2:__ USANDO FILEREADER [Ver Video...](https://youtu.be/5tant9N9F5M) :eyes:
   * __PARTE 3:__ SUBIENDO EL ARCHIVO [Ver Video...](https://youtu.be/5bkomXtQdXk) :eyes:
 
+
+* __REUTILIZAR AJAX:__ Reutilizando la función ajax para hacer peticiones get y post utilizando callbacks [Ver Código...](https://github.com/luispastendev/Cursos_Youtube/tree/master/AjaxReuse) [Ver Video](https://youtu.be/T3nFwcEmROM) :eyes:
 > :v: Si los contenidos de este repositorio son de tu interes no olvides suscribirte a nuestro canal de youtube para obtener mas contenidos similares *__"gratuitos"__*.
