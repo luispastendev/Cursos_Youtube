@@ -18,4 +18,7 @@ Almacenamos todos lo códigos referentes a los tutoriales o cursos del canal.
 
 
 * __REUTILIZAR AJAX:__ Reutilizando la función ajax para hacer peticiones get y post utilizando callbacks [Ver Código...](https://github.com/luispastendev/Cursos_Youtube/tree/master/AjaxReuse) [Ver Video](https://youtu.be/T3nFwcEmROM) :eyes:
+
+* __COMBOS DEPENDIENTES:__ Cargando combos dependientes mediante ajax [Ver Código...](https://github.com/luispastendev/Cursos_Youtube/tree/master/Combos)
+    * __PARTE 1:__ CARGANDO SELECT INICIAL [Ver Video...](https://youtu.be/jLD5vrYjC1g)
 > :v: Si los contenidos de este repositorio son de tu interes no olvides suscribirte a nuestro canal de youtube para obtener mas contenidos similares *__"gratuitos"__*.
