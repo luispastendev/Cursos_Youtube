@@ -29,6 +29,28 @@ document.addEventListener('DOMContentLoaded',function(){
         for(var i of json){
             template += `<option value="${i.id}">${i.nombre}</option>`;
         }
-        $('#cursos').innerHTML = template;
+        $('#cursos').innerHTML += template;
     });
+});
+$("#cursos").addEventListener('change',function(ev){
+    var url = 'id='+ev.target.value;
+    $("#detalles").innerHTML = ""
+    ajax('POST','server.php?controller=getTemas',encodeURI(url),function(data){
+        var json = JSON.parse(data);
+        var template = ``;
+        for(var i in json){
+            template += `<li><a href="#" id="${i}">${json[i].tema}</a><span class="tag is-warning">Duración: ${json[i].duracion}</span></li>`;
+        }
+        $("#temas").innerHTML = template;
+    },{'Content-Type':'application/x-www-form-urlencoded'})
+})
+$("#temas").addEventListener('click',function(ev){
+    ev.preventDefault();
+    var id_curso = $("#cursos").value;
+    var id_tema = ev.target.id;
+    var url = 'id_curso='+id_curso+'&id_tema='+id_tema;
+    ajax('POST','server.php?controller=getDescripciones',encodeURI(url),function(data){
+        var json = JSON.parse(data);
+        $("#detalles").innerHTML = json.descripcion
+    },{'Content-Type':'application/x-www-form-urlencoded'})
 })
