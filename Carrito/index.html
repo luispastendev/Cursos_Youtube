@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <title>Carrito</title>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <a href="#" class="navbar-item">
+                Tienda en Linea
+            </a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <!-- BOTON ABRIR CARRITO -->
+                    <p class="control">
+                        <a href="#" id="" class="button is-info">
+                            <span class="icon">
+                                <i class="fa fa-shopping-cart"></i>
+                            </span>
+                            <span class="tag is-gray" id=""><strong>0</strong></span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- ENCABEZADO -->
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Carrito Electrónico con Javascript</h1>
+            <h2 class="subtitle">Creando un carrito electrónico con vanilla js y localStorage</h2>
+        </div>
+    </div>
+</section>
+
+<!-- CATALOGO DE PRODUCTOS -->
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline" id="catalogo">
+
+        </div>
+    </div>
+</section>
+
+<!-- VENTANA MODAL -->
+<div class="modal" id="modal">
+    <div class="modal-background toggle-modal"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Carrito</p>
+            <button type="button" name="button" class="delete toggle-modal"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns" id="productosCarrito-header">
+                <div class="column is-3 has-text-centered">Producto</div>
+                <div class="column is-3 has-text-centered">Nombre</div>
+                <div class="column is-2 has-text-centered">Precio</div>
+                <div class="column is-1 has-text-centered">Cant</div>
+                <div class="column is-2 has-text-centered">Total</div>
+                <div class="column is-1 has-text-centered">Quitar</div>
+            </div>
+            <div id="">
+                <!-- PRODUCTOS AGREGADOS AL CARRITO -->
+            </div>
+            <div class="columns">
+                <div class="column is-9 has-text-right">
+                    <h1 class="title">TOTAL: </h1>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <p class="title is-3" id=""><strong>$0</strong></p>
+                </div>
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+            <a href="#" class="button is-success">Comprar</a>
+            <a href="#" class="button toggle-modal">Cerrar</a>
+        </footer>
+    </div>
+</div>
+
+<script src="scripts.js" charset="utf-8"></script>
+</body>
+</html>

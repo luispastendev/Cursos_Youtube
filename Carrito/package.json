@@ -1,0 +1,15 @@
+{
+  "name": "carrito",
+  "version": "1.0.0",
+  "description": "Carrito electronico en js",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Pastén",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.4.3",
+    "font-awesome": "^4.7.0"
+  }
+}
