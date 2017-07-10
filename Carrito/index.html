@@ -9,6 +9,7 @@
     <title>Carrito</title>
 </head>
 <body>
+
 <!-- NAVBAR -->
 <nav class="navbar">
     <div class="navbar-brand">
@@ -27,7 +28,7 @@
                 <div class="field is-grouped">
                     <!-- BOTON ABRIR CARRITO -->
                     <p class="control">
-                        <a href="#" id="" class="button is-info">
+                        <a href="#" id="btn_carrito" class="button is-info">
                             <span class="icon">
                                 <i class="fa fa-shopping-cart"></i>
                             </span>
@@ -39,6 +40,7 @@
         </div>
     </div>
 </nav>
+
 <!-- ENCABEZADO -->
 <section class="hero is-info">
     <div class="hero-body">
@@ -60,11 +62,11 @@
 
 <!-- VENTANA MODAL -->
 <div class="modal" id="modal">
-    <div class="modal-background toggle-modal"></div>
+    <div class="modal-background toggle"></div>
     <div class="modal-card">
         <header class="modal-card-head">
             <p class="modal-card-title">Carrito</p>
-            <button type="button" name="button" class="delete toggle-modal"></button>
+            <button type="button" name="button" class="delete toggle"></button>
         </header>
         <section class="modal-card-body">
             <div class="columns" id="productosCarrito-header">
@@ -89,7 +91,7 @@
         </section>
         <footer class="modal-card-foot">
             <a href="#" class="button is-success">Comprar</a>
-            <a href="#" class="button toggle-modal">Cerrar</a>
+            <a href="#" class="button toggle">Cerrar</a>
         </footer>
     </div>
 </div>
