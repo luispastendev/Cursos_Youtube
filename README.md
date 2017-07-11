@@ -29,4 +29,5 @@ Almacenamos todos lo códigos referentes a los tutoriales o cursos del canal.
 
     * __PARTE 1:__ CARGANDO CATALOGO DE PRODUCTOS [Ver Video...](https://youtu.be/8FigROG_C94) :eyes:
     * __PARTE 2:__ MOSTRANDO VENTANA MODAL [Ver Video...](https://youtu.be/QxSzqTIiOq4) :eyes:
+    * __PARTE 3:__ TRABAJANDO CON LOCAL STORAGE [Ver Video...](https://youtu.be/4si3Ikisohg) :eyes:
 > :v: Si los contenidos de este repositorio son de tu interes no olvides suscribirte a nuestro canal de youtube para obtener mas contenidos similares *__"gratuitos"__*.

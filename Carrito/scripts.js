@@ -10,6 +10,12 @@
                         {id:'P06',nombre:'Pluma',precio:7.50,imagen:'pluma.jpg',descripcion:'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
                         {id:'P07',nombre:'Plumon',precio:20,imagen:'plumon.jpg',descripcion:'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
                         {id:'P08',nombre:'Regla',precio:10,imagen:'regla.png',descripcion:'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}];
+        this.constructor = function(){
+            if(!localStorage.getItem("carrito")){
+                localStorage.setItem('carrito','[]');
+            }
+        }
+        this.getCarrito = JSON.parse(localStorage.getItem("carrito"));
     }
     function Carrito_View(){
         this.renderCatalogo = function(){
@@ -51,6 +57,7 @@
 
     document.addEventListener('DOMContentLoaded',function(){
         carrito_view.renderCatalogo();
+        carrito.constructor();
     });
     $("#btn_carrito").addEventListener("click",function(){
         carrito_view.showModal();
