@@ -33,4 +33,14 @@ Almacenamos todos lo códigos referentes a los tutoriales o cursos del canal.
     * __PARTE 4:__ AGREGANDO PRODUCTOS A LOCAL STORAGE [Ver Video...](https://youtu.be/UXGtJYDJC_g) :eyes:
     * __PARTE 5:__ MOSTRANDO PRODUCTOS [Ver Video...](https://youtu.be/0jpkN1mFWac) :eyes:
     * __PARTE 6:__ ELIMINANDO PRODUCTOS [Ver Video...](https://youtu.be/YjR_51xGyxs) :eyes:
+
+* __MINICURSO DE GULP:__
+    * __PARTE1:__ Instalando Gulp [Ver Video...](https://youtu.be/OWJHYi5Ul5M):eyes:
+    * __PARTE2:__ Transpilando SASS [Ver Video...](https://youtu.be/Guwk-8Q5IlE):eyes:
+    * __PARTE3:__ Gulp + BrowserSync [Ver Video...](https://youtu.be/qGv2DRUuFx4):eyes:
+    * __PARTE4:__ Gulp + Uglify [Ver Video...](https://youtu.be/gPiH2bq3GNQ):eyes:
+    * __PARTE5:__ Gulp + Babeljs [Ver Video...](https://youtu.be/1gpJGudogcY):eyes:
+    * __PARTE6:__ Gulp + CleanCSS + Autoprefixer [Ver Video...](https://youtu.be/DLGY6TpgWr0):eyes:
+    * __CÓDIGO:__ [Ver Código...](https://github.com/luispastendev/Cursos_Youtube/tree/master/Gulp)
+
 > :v: Si los contenidos de este repositorio son de tu interes no olvides suscribirte a nuestro canal de youtube para obtener mas contenidos similares *__"gratuitos"__*.

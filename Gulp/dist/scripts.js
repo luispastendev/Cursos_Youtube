@@ -1,0 +1,1 @@
+"use strict";var a=10,b=30,resultado="La suma de "+a+" + "+b+" = "+(a+b);
