@@ -127,9 +127,9 @@
     var carrito_view = new Carrito_View();
 
     document.addEventListener('DOMContentLoaded',function(){
+        carrito.constructor();
         carrito_view.renderCatalogo();
         carrito_view.totalProductos();
-        carrito.constructor();
     });
 
     $("#btn_carrito").addEventListener("click",function(){
